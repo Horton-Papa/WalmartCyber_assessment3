@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SF Hayes Valley</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <!-- NTS: why is this an <ol> vs <ul>? Doesn'y <ul> make more sense? -->
+        <!-- Which CSS is causing the below to be inline? -->
+        <ol>
+            <li class="crumb"><a href="./home.html">Home</a></li>
+            <li class="crumb"><a href="./profile.html">Profile</a></li>
+            <li class="crumb"><a href="./about.html">About</a></li>
+            <li class="crumb"><a href="./neighborhood.html">Neighborhood</a></li>
+        </ol>
+    </nav>
+    <img id="painted-ladies" src="https://zumpermedia.s3.amazonaws.com/blog/wp-content/uploads/2020/03/18125623/hayes-valley-1536x1024.jpg.webp">
+    <content>
+        <h1>Hayes Valley</h1>
+
+        <p> 
+            Hayes Valley neighborhood might be known to a lot of people due to the famous painted-ladies, Victorian homes that are painted bright colors,
+            and was part of the opening scene in Full House.
+        </p>
+
+        <p>
+            There are also quite a bit of restaurants and bars in the neighborhood to enjoy!
+        </p>
+
+        <h2>Restaurants, Bars, etc: </h2>
+        <ul>
+            <li class="aMano"><a href="https://www.amanosf.com/menu/">A mano</a></li>
+            <li class="chez"><a href="http://places.singleplatform.com/chez-maman-1/menu?ref=google">Chez Maman</a></li>
+            <li class="papito"><a href="https://www.papitohayessf.com/menu/">Papito Hayes</a></li>
+            <li class="souvla"><a href="https://www.souvla.com/menu/">Souvla</a></li>
+        </ul>
+
+        <h3>Need help deciding on food?</h3>
+        <button id="food-randomizer">Click for recommendations!</button>
+        <div id="food-result">Recommendation will show here!</div>
+
+    </content>
+
+    <script src="./neighborhood.js"></script>
+</body>
+</html>

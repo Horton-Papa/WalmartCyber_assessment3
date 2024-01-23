@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<link href="styles.css" rel="stylesheet">
+
+</head>
+<body>
+	<nav>
+		<!-- NTS: why is this an <ol> vs <ul>? Doesn'y <ul> make more sense? -->
+		<!-- Which CSS is causing the below to be inline? -->
+		<ol>
+	        <li class="crumb"><a href="./home.html">Home</a></li>
+	        <li class="crumb"><a href="./profile.html">Profile</a></li>
+	        <li class="crumb"><a href="./about.html">About</a></li>
+			<li class="crumb"><a href="./neighborhood.html">Neighborhood</a></li>
+	    </ol>
+	</nav>
+
+	<content>
+		<h1>Welcome to this little website.</h1>
+		<aside> Hello World</aside>
+
+		<p> Welcome to the webpage for assessment 3! </p>
+
+		<ul>
+			<li> You are amazing! </li>
+			<li> You are kind! </li>
+			<li> You got this!</li>
+		</ul>
+
+		<img id="image-home" src="https://images.unsplash.com/photo-1698729850848-d82e77095673?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bXIyfGVufDB8fDB8fHww">
+
+		<h2>Contact Us</h2>
+
+		<!-- NTS: ask about form buttons. This is different than some of the labs. JS appears to be listening 
+		in the top of the tree, vs explicitly defining a button in the children -->
+		<form id="contact">
+			Your name:
+			<input type="text">
+			<br>
+			Message:
+			<input type="textarea">
+			<br>
+			How did you hear about us (select all that applies)?
+			<br>
+			<br>
+			<label for="Google"> Google: </label>
+			<input type="checkbox" id="Google" name="Google">
+			
+			<label for="Friend"> Friend: </label>
+			<input type="checkbox" id="Friend" name="Friend">
+
+			<label for="other"> Other: </label>
+			<input type="checkbox" id="other" name="other">
+			<br>
+			<input type="submit">
+
+		</form>
+	</content>
+
+
+	<script src="index.js"></script>
+
+</body>
+</html>
